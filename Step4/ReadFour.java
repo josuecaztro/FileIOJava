@@ -15,14 +15,18 @@ public class ReadFour {
 
             try {
                 Scanner fileIn = new Scanner(new File("Step4/input.txt"));
+                //initialize variable
                 int sum = 0;
+                //while there's a next line
                 while (fileIn.hasNext()) {
-                    // Reads the entire line
+                    // Reads the entire line as ints
                     int lineIn = fileIn.nextInt();
-                    // Output the line
+                    // take the int from that line and add it to sum
                     sum += lineIn;
                 }
+                //print total
                 System.out.println(sum);
+                //close filein scanner (good practice)
                 fileIn.close();
             } catch (FileNotFoundException e) {
                 System.out.println("File not found.");
