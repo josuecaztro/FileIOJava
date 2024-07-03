@@ -23,9 +23,10 @@ public class ReadFour {
                     int lineIn = fileIn.nextInt();
                     // take the int from that line and add it to sum
                     sum += lineIn;
+                    System.out.println("Running total: " + sum + "...");
                 }
                 //print total
-                System.out.println(sum);
+                System.out.println("Total : " + sum);
                 //close filein scanner (good practice)
                 fileIn.close();
             } catch (FileNotFoundException e) {
